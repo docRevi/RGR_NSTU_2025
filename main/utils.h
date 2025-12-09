@@ -5,6 +5,13 @@
 #include <cstdint>
 #include <string>
 
+enum cryptName{
+    Atbash = 1,
+    Hill,
+    Polybius,
+    CodeWord
+};
+
 using namespace std;
 
 void clearScreen();

@@ -92,22 +92,22 @@ int main() {
             string cipherName;
 
             switch (input) {
-                case 1: {
+                case cryptName::Atbash: {
                     menuFunc = getMenuFunction("menu_AtbashCrypt");
                     cipherName = "Атбаш";
                     break;
                 }
-                case 2: {
+                case cryptName::Hill: {
                     menuFunc = getMenuFunction("menu_HillCrypt");
                     cipherName = "Хилла";
                     break;
                 }
-                case 3: {
+                case cryptName::Polybius: {
                     menuFunc = getMenuFunction("menu_PolybiusCrypt");
                     cipherName = "Полибия";
                     break;
                 }
-                case 4: {
+                case cryptName::CodeWord: {
                     menuFunc = getMenuFunction("menu_CodeWordCrypt");
                     cipherName = "c кодовым словом";
                     break;

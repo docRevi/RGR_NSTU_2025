@@ -35,7 +35,6 @@ void writeFile(const string& filename , const vector<uint8_t>& data) {
         throw runtime_error("Не удалось открыть файл для записи: " + filename);
     }
 
-    // Записываем данные из вектора в файл
     if (!file.write(reinterpret_cast<const char*>(data.data()),  static_cast<streamsize>(data.size()))) {
         throw runtime_error("Ошибка при записи в файл: " + filename);
     }
