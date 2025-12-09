@@ -71,6 +71,13 @@ int main() {
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 throw invalid_argument("Ошибка ввода, введите число от 0 до 4");
             }
+
+            char nextChar = cin.peek();
+            if (nextChar != '\n' && nextChar != EOF){
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                throw invalid_argument("Ошибка ввода, введите число от 0 до 4");
+            }
             
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             
